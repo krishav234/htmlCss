@@ -119,9 +119,13 @@ nested list are used to insert list inside other lists.
     cell padding is the space between cell border and cell data/text <br>    
 
     border color is used to color the border of tables <br>
+    frame attribute is used to manage the outside border of the table, void mean no border, hsides for horizontal borders,vsides for vertical borders. lhs for left hand side, same as rhs, <br>
+    rules are used to amange the inside bordere of a table : none,rows,cols,all
 </h5>
  
-<table border="10" bgcolor="red" cellspacing="10" cellpadding="10" bordercolor="cyan">
+<table border="10" cellspacing="10" cellpadding="10" bordercolor="cyan" align="center" background="Image/car.jpg" rules="rows">
+<!-- frame="lhs" -->
+
     <tr>
         <th>sr no</th>
         <th>name</th>
