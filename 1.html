@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
     <title>My first page</title>
+    <style>
+        div{
+            border:2px dashed black;
+            width: 400px;
+            height: 600px;
+            background-image: url(/Image/car.jpg);
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
 
@@ -171,11 +180,78 @@ nested list are used to insert list inside other lists.
 
 
     <h1>inline frame is floating frame and used in html5. it is used to create a frame inside the body of a webpage, can be used multiple times in a single page</h1>
-    <marquee behavior="" direction="right">
+    <marquee behavior=""  direction="left" scrollamount="5">
             <iframe src="table.html" frameborder="0" width="100%" height="350px"></iframe>
             </marquee>
 
-</body>
+<h1>accordian, foldable/hideable content on webpage. </h1>
+<details>
+    <summary>Click here for content</summary>
+    <p>content</p>
+</details>
+
+DAY 5
+    <h1>LOGIN FORM</h1>
+        <form>
+                 <!-- Required is used for validation you have must fill values -->
+                <input type="email" placeholder="Email ID" required><br>     
+                <input type="password" placeholder="Password"required><br> <br>
+                
+                
+                <!--radio button allow user to select user form one option to multiple option-->
+
+                <input type="radio" name="a1">Male 
+                <input type="radio" name="a1">Female <br>
+
+                <!-- checkbox is used to select one or more than one option-->
+
+                <input type="checkbox">Apple
+                <input type="checkbox">Mango
+                <input type="checkbox">Banana <br>
+                <input type="file"><br>
+                <input type="date" min="2003-04-12" max="2010-04-12"> <br>
+
+                <textarea rows="5" cols="20"></textarea><br>
+                <input type="number" min="1" max="10"> <br>
+                <input type="submit">
+                <input type="reset"> <br>
+                
+                <button>Click me</button>
+
+                
+        </form>
+
+        DAY 6
+
+        <form>
+                <select>
+                       <optgroup label="weekdays:-"> <!--optgroup tag is used to give category our options-->
+                        <option>Tuesday</option>
+                        <option>Monday</option>     
+                        <option>Wednesday</option>
+                        <option>Thursday</option>
+                        <option>Friday</option>
+                       </optgroup> 
+                       <optgroup label="weekends:-"> 
+                        <option>Saturday</option>
+                        <option>Sunday</option>     
+                       </optgroup> 
+                       
+                </select>
+        </form>
+
+        <fieldset>
+            <legend><h1>Fieldset and Legend </h1>  </legend>
+            <p> this is used to give border our content</p>
+        </fieldset>
+
+        volume:-<input type="range" min="2" max="20">
+        
+
+        <h1>CSS</h1><p>is used to design and decorate your webpage</p>
+            <h1>div tag, is a block tag and used to create a block/box/container</h1>
+            <div>sss</div>
+    </body>
 </html> 
 
 
