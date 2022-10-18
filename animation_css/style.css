@@ -1,0 +1,74 @@
+div{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    background-image: url("../Image/bg.jpg");
+    background-size: contain;    
+    border-radius: 0;
+    transition: width 1.2s,height 1s, background-image 2s, border-radius 1.5s;
+    transition-timing-function: ease-in-out;
+}
+div:hover{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-image: url("../Image/car.jpg");
+}
+
+/* transition delay. delays the  transition by specified seconds */
+
+
+/* transition timing fucntions, ease in, linear , ease out, easeinout */
+
+/* animation, self running animation, dont require hover effects or so */
+
+h1{
+    color:rgb(99, 66, 73);
+    width: 250px;
+    height: 250px;
+    animation: txt 5s ease-in-out infinite ;
+    position: relative;
+    background-size: cover;
+}
+@keyframes txt {
+    0%{
+        /* -webkit-filter:   hue-rotate(0deg); */
+        left: 0px;
+        top: 0px;
+        content:"this";
+        background-image: url("../Image/hover1.jpg");
+    }
+    25%{
+        /* -webkit-filter:   hue-rotate(50deg); */
+        left: 200px;
+        top: 0px;
+        
+        content:"is";
+        background-image: url("../Image/hover2.jpg");
+    }
+    50%{
+        /* -webkit-filter:   hue-rotate(100deg); */
+        left: 200px;
+        top: 200px;
+        
+        content:"thatguy";
+        background-image: url("../Image/hover3.jpg");
+    }
+75%{
+    /* -webkit-filter:   hue-rotate(50deg); */
+    left: 0px;
+    top: 200px;
+    
+    content:"rishav";
+    background-image: url("../Image/hover4.jpg");
+}
+    100%{
+        /* -webkit-filter:  hue-rotate(100deg); */
+        left: 0px;
+        
+        content:"this";
+        top: 0px;
+        background-image: url("../Image/hover1.jpg");
+    }
+}

@@ -16,26 +16,59 @@
         }
         .one{
             background-image: url(/Image/car.jpg);
-            background-size: cover;
+            background-size: contain;
+            overflow: auto;
         }
         .red{
             background-color: red;
+            padding-inline-start: 15px;  
+            overflow: auto;   /* overflow property is used when you have more content and less space*/
         }
         .yellow{
             background-color: yellow;
+            overflow: auto;
         }
         .blue{
             background-color: blue;
+            overflow: auto;
         }
         .black{
             background-color: black;
+            overflow: auto;
         }
         .crimson{
             background-color: crimson;
+            overflow: auto;
         }
         .cyan{
             background-color: cyan;
+            overflow: auto;
         }
+        
+        .block{
+                width:90%;
+                border: 0;
+        }
+
+        .block img{
+            float: left;
+            height: 200px;
+            width: 130px;
+            overflow: auto;
+        }
+        .block p{
+            overflow: auto;
+        }
+
+        .block button{
+            background-color: blue;
+        }
+
+        .block button:hover{
+            background-color: green;
+        }
+
+
     </style>
 </head>
 <body>
@@ -271,17 +304,28 @@ DAY 5
             <p> this is used to give border our content</p>
         </fieldset>
 
-        volume:-<input type="range" min="2" max="20">
+        volume:-<input type="range" min="2" max="20"> 
         
 
         <h1>CSS</h1><p>is used to design and decorate your webpage</p>
             <h1>div tag, is a block tag and used to create a block/box/container</h1>
             <div class="one">sss</div>
-            <div class="red">sss</div>
+            <div class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos suscipit quidem maiores dolore nulla ratione unde fugiat, nostrum quod itaque eos sunt, officiis corporis quisquam alias vitae atque doloribus voluptates.orem ipsum dolor sit amet consectetur adipisicing elit. Quos suscipit quidem maiores dolore nulla ratione unde </div>
             <div class="cyan">ssss</div>
             <div class="crimson">ssss</div>
             <div class="blue">ssss</div>
             <div class="black">ssss</div>
+
+            <div class="block">
+                <img src="/Image/car.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aspernatur, incidunt expedita voluptate perferendis natus est accusamus cum, ad beatae quae vel magnam enim voluptatem tempore labore dolore explicabo. Corrupti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, ratione ipsum, unde laboriosam aperiam, earum veniam dolorem molestias optio quaerat repudiandae! Consequuntur alias distinctio quam ducimus minus architecto cum id!</p>
+                <button>CLICK ME</button>
+            </div>
+
+
+
+            <!--  -->
+            
     </body>
 </html> 
 
